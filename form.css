@@ -5,3 +5,52 @@ form {
   border: 1px solid #ccc;
   border-radius: 1em;
 }
+
+ul {
+  list-style: none;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  /* uniform text field*/
+  box-sizing: border-box;
+
+  /* match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #000;
+}
+
+textarea {
+  /* align multiline text fields with their labels */
+  vertical-align: top;
+  /*space for text */
+  height: 5em;
+}
+
+.button {
+  /* align buttons with the text fields*/
+  padding-left: 90px;
+}
+
+button {
+  margin-left: 0.5em;
+}
